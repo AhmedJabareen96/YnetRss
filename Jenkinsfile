@@ -19,6 +19,7 @@ pipeline {
                 success {
                     junit '**/target/surefire-reports/TEST-*.xml'
                     archiveArtifacts 'target/*.jar'
+                    slackSend baseUrl: 'https://hooks.slack.com/services/', color: "good", message: "Message from Jenkins Pipeline"
                 }
             }
         }
