@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title> החדשות </title>
+</head>
+
+<body>
+<center>
+<h1> החדשות שך YNET </h1>
+    <div th:each="i: ${newslist}">
+        <br><br>
+            <div th:text="${i.getTitle()}"></div>
+            <div th:utext="${i.getDescription().getValue()}"></div>
+            <div >
+                <a th:href="${i.getLink() }"> Go to website </a>
+            </div>
+            <div class="h5" th:text="${i.getPublishedDate()}"></div>
+            <br><br>
+        </div>
+    </div>
+</div>
+</center>
+</body>
+</html>
