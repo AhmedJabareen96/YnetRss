@@ -2,7 +2,8 @@
 
 ## About this application:
 **this application reads rss data feed from ynet website.**
-[![](image)](http://https://i.imgur.com/bvD4XrR.png)
+
+[Imgur](https://i.imgur.com/bvD4XrR.png)
 
 ## Requirements
 In order to run the application, you need:
@@ -11,6 +12,8 @@ In order to run the application, you need:
 
 ## Running the Application:
 #### ## in order to run the application use the following command:
+Unix-like:
 > ./mvnw -Dmaven.test.failure.ignore=true clean package
 
-
+Windows:
+> ./mvnw.cmd -Dmaven.test.failure.ignore=true clean package
